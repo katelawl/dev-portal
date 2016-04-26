@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro|Merriweather|Cardo);
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*.clearfixed {
+	&:before,
+	&:after {
+		display:table;
+		content: " ";
+		clear: both;
+		overflow:hidden;
+	}
+} */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  height: 100%;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: auto;
+  overflow-z: hidden;
+}
+body:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+main {
+  max-width: 96em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+  padding: 1em;
+}
+main:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+aside {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  background-color: rgab(0, 0, 0, 0.2);
+}
+
+header {
+  padding: 1em;
+  position: relative;
+}
+
+.container {
+  width: 96em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+::-moz-selection {
+  background: #ffc5d5;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ffc5d5;
+  text-shadow: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+h1 {
+  font-size: 4.4em;
+  font-family: "Source Serif Pro", serif;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  width: 75%;
+}
+
+h2 {
+  font-size: 2.4em;
+  font-family: "Source Serif Pro", serif;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  width: 75%;
+}
+
+/*nav {
+	float:right;
+	position: relative;
+	text-align: center;
+	list-style-type: none;
+	margin-right: 100px;
+
+	li{
+		display: inline-block;
+
+		a{
+			text-decoration: none;
+		}//a
+		a:link,
+		a:visited {
+			color:black;
+		}//a link visited
+		a:hover,
+		a:active {
+			color: $light-pink;
+		}
+	}
+
+}  */
+#title {
+  background-image: url(../img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: center center;
+  background-attachment: fixed;
+  height: 900px;
+  width: 100%;
+}
+#title h1 {
+  margin-top: 10em;
+}
+
+.gallery img {
+  text-align: center;
+  margin: 30px;
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+aside li {
+  padding: 10px;
+  font-size: 1.6em;
+  list-style-type: none;
+}
+aside li a {
+  text-decoration: none;
+}
+aside li a:link,
+aside li a:visited {
+  color: black;
+}
+aside li a:hover,
+aside li a:active {
+  color: #ff96b6;
+}
+
+footer {
+  position: absolute;
+  border: solid .1em black;
+  width: 100%;
+  bottom: 0em;
+  left: 0em;
+}
+footer p {
+  font-size: 1.3em;
+}

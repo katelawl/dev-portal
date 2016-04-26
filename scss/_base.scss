@@ -1,0 +1,152 @@
+//Global Style
+*,
+*:before,
+*:after {
+	margin:0;
+	padding: 0;
+
+}
+body {
+		font-size: 62.5%;
+		height:100%;
+		@include home;
+		@include clearfixed;
+}
+
+main {
+	@include container(96em);
+	@include span (8);
+	padding: 1em;
+
+	}
+
+aside {
+	@include span(3);
+	background-color: rgab(0,0,0,.2);
+}
+header{
+	padding: 1em;
+	position:relative;
+}
+
+.container {
+	width: 96em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+::-moz-selection {
+    background: $very-light-pink;
+    text-shadow: none;
+}
+
+::selection {
+    background: $very-light-pink;
+    text-shadow: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float:right;
+}
+
+//text style
+h1 {
+	font-size: $large-text;
+	font-family: $pro-font;
+	text-align: center;
+	@include title-box;
+	width: 75%;
+}
+
+h2 {
+	font-size: $medium-text;
+	font-family: $pro-font;
+	text-align: center;
+	@include title-box;
+	width: 75%;
+}
+
+//nav 
+/*nav {
+	float:right;
+	position: relative;
+	text-align: center;
+	list-style-type: none;
+	margin-right: 100px;
+
+	li{
+		display: inline-block;
+
+		a{
+			text-decoration: none;
+		}//a
+		a:link,
+		a:visited {
+			color:black;
+		}//a link visited
+		a:hover,
+		a:active {
+			color: $light-pink;
+		}
+	}
+
+}  */
+//sections
+
+#title {
+	@include header-box;
+	width: 100%;
+	h1{
+ 		margin-top: 10em;
+	}
+}
+
+
+
+.gallery img {
+	text-align: center;
+	margin:30px;
+	@include span(3);
+
+}
+
+aside li {
+	padding:10px;
+	font-size: 1.6em;
+	list-style-type: none;
+	a{
+		text-decoration: none;
+	}
+	a:link,
+	a:visited {
+		color:black;
+	}//a link visited
+	a:hover,
+	a:active {
+			color: $light-pink;
+		}
+}
+ footer{
+ 	position: absolute;
+ 	@include my-border;
+ 	width:100%;
+ 	bottom: 0em;
+ 	left: 0em;
+ 	p{
+
+ 		font-size: $smallest-text;
+ 	}
+ }
+
+//media
+
+@include susy-breakpoint($medium) {
+}
+
+@include susy-breakpoint($small) {
+
+}

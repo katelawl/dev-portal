@@ -1,0 +1,49 @@
+@mixin clearfixed(){
+	&:after {
+		display: table;
+		content: " ";
+		clear: both;
+	}
+}
+
+/*.clearfixed {
+	&:before,
+	&:after {
+		display:table;
+		content: " ";
+		clear: both;
+		overflow:hidden;
+	}
+} */
+
+
+ @mixin home {
+ 	perspective: 1px;
+ 	transform-style: preserve-3d;
+ 	height:100%;
+ 	overflow-y: scroll;
+	overflow-x: auto;
+	overflow-z: hidden;
+ }
+
+@mixin header-box {
+	background-image: url(../img/back.jpg);
+	background-size: cover;
+	background-repeat:no-repeat;
+	position: center center;
+	background-attachment: fixed;
+	height: 900px;
+}
+
+@mixin title-box {
+	background: rgba(255,255,255,.8);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+
+}
+
+
+@mixin my-border{
+	border: solid .1em black;
+}
